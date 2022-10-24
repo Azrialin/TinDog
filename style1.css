@@ -474,7 +474,6 @@ footer p{
 	height: 100%;
 	width: 100%;
 }
-/* try */
 
 .blog-container{
 	width: 90%;
@@ -577,11 +576,6 @@ footer p{
 		justify-content: center;
 	}
 }
-/* try */
-
-/* .posts_section .container{
-	position: relative;
-} */
 
 .pop-hide{
 	display: none;
@@ -591,11 +585,10 @@ footer p{
 	height: 100%;
 	object-fit: cover;
 	overflow: hidden;
-	padding: 20px;
 }
 
 .pop img{
-	margin-top: 10px;
+	margin: 30px;
 }
 
 .pop-overlay{
@@ -637,12 +630,7 @@ footer p{
 	color: black;
 }
 
-/* @media screen and (max-width:1023px) {
-	.pop {
-		display: flex;
-		justify-content: center;
-	}
-} */
+
 
 /* 3rd page profiles_main */
 
