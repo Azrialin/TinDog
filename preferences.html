@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style1.css">
+    <!--CSS grid system -->
+    <link rel="stylesheet" href="./grid.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- font-style -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- navbar -->
+    <input type="checkbox" name="" id="menu-switch">
+    <section class="navbar_section">
+        <nav>
+            <!-- logo -->
+            <div class="logo_box">
+                <a href="index.html"><img class="logo" src="pics/logo1.png" alt="logo"></a>
+                <a href="index.html"><img class="logo_name" src="pics/TinDog.png" alt="logo_name"></a>
+            </div>
+            <!-- hamburger -->
+            <label for="menu-switch" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- navbar items -->
+            
+            <div class="nav_item">
+                <a class="nav_item1" href="posts.html">Posts</a>
+                <a class="nav_item2" href="profiles.html">Profiles</a>
+                <a class="nav_item3" href="preferences.html">Preferences</a>
+                
+                <div class="dropdown">
+                    <a class="nav_item4" href="membership.html">Membership</a>
+                    <div class="dropdown-content">
+                        <a href="login.html">Log in</a>
+                    </div>
+                </div>
+                <a class="nav_item5" href="Aboutus.html">About Us</a>
+                
+            </div>
+            
+
+        </nav>
+    </section>
+    <!-- preferences_main -->
+
+    <section class="create-preferences-section">
+
+        <div class="container">
+            <h1 class="prefer-title">Preferences</h1>
+            <p class="prefer-description">Create your Tindog prefrences for you dog, so we can match them with other dogs accordingly.</p>
+
+                <div class="drag-container">
+                    <ul class="drag-list">
+                        <!-- scale1 column -->
+                        <li class="drag-column scale1-column">
+                            <span class="column-header">
+                                <h1>Nope</h1>
+                            </span>
+                            <!-- scale1 content -->
+                            <div id="scale1-content" class="custom-scroll">
+                                <ul class="drag-item-list" id="scale1-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(0)">
+
+                                </ul>
+                            </div>
+                            <!-- add button group -->
+                            <div class="add-btn-group">
+                                <div class="add-btn" onclick="showInputBox(0)">
+                                    <span class="plus-sign">+</span>
+                                    <span>Add Item</span>
+                                </div>
+                                <div class="add-btn solid" onclick="hideInputBox(0)">
+                                    <span>Save Item</span>
+                                </div>
+                            </div>
+                            <div class="add-container">
+                                <div class="add-item" contenteditable="true"></div>
+                            </div>
+                        </li>
+
+                        <!-- scale2 column -->
+                        <li class="drag-column scale2-column">
+                            <span class="column-header">
+                                <h1>Probably Not</h1>
+                            </span>
+                            <!-- scale2 content -->
+                            <div id="scale2-content" class="custom-scroll">
+                                <ul class="drag-item-list" id="scale2-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(1)">
+
+                                </ul>
+                            </div>
+                            <!-- add button group -->
+                            <div class="add-btn-group">
+                                <div class="add-btn" onclick="showInputBox(1)">
+                                    <span class="plus-sign">+</span>
+                                    <span>Add Item</span>
+                                </div>
+                                <div class="add-btn solid" onclick="hideInputBox(1)">
+                                    <span>Save Item</span>
+                                </div>
+                            </div>
+                            <div class="add-container">
+                                <div class="add-item" contenteditable="true"></div>
+                            </div>
+                        </li>
+
+                        <!-- scale3 column -->
+                        <li class="drag-column scale3-column">
+                            <span class="column-header">
+                                <h1>Highly Prefered</h1>
+                            </span>
+                            <!-- scale3 content -->
+                            <div id="scale3-content" class="custom-scroll">
+                                <ul class="drag-item-list" id="scale3-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(2)">
+
+                                </ul>
+                            </div>
+                            <!-- add button group -->
+                            <div class="add-btn-group">
+                                <div class="add-btn" onclick="showInputBox(2)">
+                                    <span class="plus-sign">+</span>
+                                    <span>Add Item</span>
+                                </div>
+                                <div class="add-btn solid" onclick="hideInputBox(2)">
+                                    <span>Save Item</span>
+                                </div>
+                            </div>
+                            <div class="add-container">
+                                <div class="add-item" contenteditable="true"></div>
+                            </div>
+                        </li>
+
+                        <!-- scale4 column -->
+                        <li class="drag-column scale4-column">
+                            <span class="column-header">
+                                <h1>Yep</h1>
+                            </span>
+                            <!-- scale4 content -->
+                            <div id="scale4-content" class="custom-scroll">
+                                <ul class="drag-item-list" id="scale4-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(3)">
+                                   
+                                </ul>
+                            </div>
+                            <!-- add button group -->
+                            <div class="add-btn-group">
+                                <div class="add-btn" onclick="showInputBox(3)">
+                                    <span class="plus-sign">+</span>
+                                    <span>Add Item</span>
+                                </div>
+                                <div class="add-btn solid" onclick="hideInputBox(3)">
+                                    <span>Save Item</span>
+                                </div>
+                            </div>
+                            <div class="add-container">
+                                <div class="add-item" contenteditable="true"></div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+       <!-- Footer -->
+    <footer>
+
+        <div class="footer_list ">
+
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Subscription</h4>
+                        <ul>
+                            <li><a href="">Subscription Packages</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href=""><i class="fa-brands fa-facebook-f fa-3x"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram fa-3x"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube fa-3x"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter fa-3x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <p>本網站為緯育TibaMe前端設計工程師班第75期學員專題作品，本平台僅供學習、展示之用。</p>
+
+    </footer>
+    <script src="./prefer.js"></script>
+</body>
+</html>
